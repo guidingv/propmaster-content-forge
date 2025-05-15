@@ -43,17 +43,17 @@ const Index = () => {
     <Layout>
       {!property || !generatedContent ? (
         <div className="space-y-10">
-          {/* Hero Section with updated design */}
-          <div className="text-center space-y-6 py-12 bg-gradient-to-b from-gray-50 to-white rounded-lg border border-gray-100 shadow-sm">
+          {/* Hero Section with orange theme */}
+          <div className="text-center space-y-6 py-12 bg-gradient-to-b from-orange-50 to-white rounded-lg border border-orange-100 shadow-sm">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-              Immobilien Marketing <span className="text-[#9b87f5]">Automation</span>
+              Immobilien Marketing <span className="text-orange-500">Automation</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               Erstellen Sie professionelle Marketingmaterialien für Ihre Immobilienangebote in Minuten, nicht Stunden.
             </p>
           </div>
           
-          {/* Benefits with updated design */}
+          {/* Benefits with orange design */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {[
               {
@@ -70,7 +70,7 @@ const Index = () => {
               }
             ].map((benefit, index) => (
               <div key={index} className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-[#9b87f5] mb-2">{benefit.title}</h3>
+                <h3 className="text-lg font-semibold text-orange-500 mb-2">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.description}</p>
               </div>
             ))}

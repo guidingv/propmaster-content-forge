@@ -29,16 +29,17 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
     <div className="bg-white rounded-lg shadow-lg p-6 max-w-4xl mx-auto animate-fade-in">
       <div className="mb-8 space-y-4">
         <div className="flex justify-between items-center">
-          <h2 className="text-2xl font-bold text-realestate-dark">Generierte Marketing-Inhalte</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Generierte Marketing-Inhalte</h2>
           <Button
             variant="outline"
             size="sm"
             onClick={onReset}
+            className="border-orange-300 hover:bg-orange-50"
           >
             Neues Projekt starten
           </Button>
         </div>
-        <p className="text-realestate-muted">
+        <p className="text-gray-600">
           Ihre KI-generierten Marketing-Inhalte sind bereit. Verwenden Sie die folgenden Tabs, um verschiedene Inhaltstypen anzuzeigen.
         </p>
       </div>
@@ -50,18 +51,38 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
       
       {/* Content Tabs */}
       <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-        <TabsList className="w-full grid grid-cols-2 md:grid-cols-4">
-          <TabsTrigger value="website">Webseite</TabsTrigger>
-          <TabsTrigger value="email">E-Mail</TabsTrigger>
-          <TabsTrigger value="facebook">Facebook</TabsTrigger>
-          <TabsTrigger value="linkedin">LinkedIn</TabsTrigger>
+        <TabsList className="w-full grid grid-cols-2 md:grid-cols-4 bg-orange-50 text-gray-700">
+          <TabsTrigger 
+            value="website" 
+            className="data-[state=active]:bg-orange-500 data-[state=active]:text-white"
+          >
+            Webseite
+          </TabsTrigger>
+          <TabsTrigger 
+            value="email"
+            className="data-[state=active]:bg-orange-500 data-[state=active]:text-white"
+          >
+            E-Mail
+          </TabsTrigger>
+          <TabsTrigger 
+            value="facebook"
+            className="data-[state=active]:bg-orange-500 data-[state=active]:text-white"
+          >
+            Facebook
+          </TabsTrigger>
+          <TabsTrigger 
+            value="linkedin"
+            className="data-[state=active]:bg-orange-500 data-[state=active]:text-white"
+          >
+            LinkedIn
+          </TabsTrigger>
         </TabsList>
         
         {/* Website Content */}
         <TabsContent value="website" className="space-y-6">
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
             <div className="flex justify-between mb-4">
-              <h3 className="font-bold text-realestate-dark">Webseiten-Text</h3>
+              <h3 className="font-bold text-gray-800">Webseiten-Text</h3>
               <Button 
                 variant="outline" 
                 size="sm"
@@ -70,6 +91,7 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
                   content.website.body + 
                   content.website.conclusion
                 )}
+                className="border-orange-300 hover:bg-orange-50"
               >
                 Alles kopieren
               </Button>
@@ -95,11 +117,12 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
         <TabsContent value="email" className="space-y-6">
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
             <div className="flex justify-between mb-4">
-              <h3 className="font-bold text-realestate-dark">E-Mail-Kampagne</h3>
+              <h3 className="font-bold text-gray-800">E-Mail-Kampagne</h3>
               <Button 
                 variant="outline" 
                 size="sm"
                 onClick={() => copyToClipboard(content.email)}
+                className="border-orange-300 hover:bg-orange-50"
               >
                 Kopieren
               </Button>
@@ -115,13 +138,14 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
         <TabsContent value="facebook" className="space-y-6">
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
             <div className="flex justify-between mb-4">
-              <h3 className="font-bold text-realestate-dark">
+              <h3 className="font-bold text-gray-800">
                 Facebook-Anzeigentext (Variante {activeFacebookVariant + 1}/{content.facebook.length})
               </h3>
               <Button 
                 variant="outline" 
                 size="sm"
                 onClick={() => copyToClipboard(content.facebook[activeFacebookVariant])}
+                className="border-orange-300 hover:bg-orange-50"
               >
                 Kopieren
               </Button>
@@ -139,7 +163,7 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
                     onClick={() => setActiveFacebookVariant(index)}
                     className={`w-3 h-3 rounded-full ${
                       index === activeFacebookVariant 
-                        ? 'bg-realestate-primary' 
+                        ? 'bg-orange-500' 
                         : 'bg-gray-300'
                     }`}
                   />
@@ -153,11 +177,12 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
         <TabsContent value="linkedin" className="space-y-6">
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
             <div className="flex justify-between mb-4">
-              <h3 className="font-bold text-realestate-dark">LinkedIn-Beitrag</h3>
+              <h3 className="font-bold text-gray-800">LinkedIn-Beitrag</h3>
               <Button 
                 variant="outline" 
                 size="sm"
                 onClick={() => copyToClipboard(content.linkedin)}
+                className="border-orange-300 hover:bg-orange-50"
               >
                 Kopieren
               </Button>
@@ -172,15 +197,24 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
       
       {/* Export options */}
       <div className="mt-8 pt-6 border-t border-gray-200">
-        <h3 className="font-semibold text-realestate-dark mb-4">Exportoptionen</h3>
+        <h3 className="font-semibold text-gray-800 mb-4">Exportoptionen</h3>
         <div className="flex flex-wrap gap-3">
-          <Button variant="outline">
+          <Button 
+            variant="outline"
+            className="border-orange-300 hover:bg-orange-50"
+          >
             Als PDF exportieren
           </Button>
-          <Button variant="outline">
+          <Button 
+            variant="outline"
+            className="border-orange-300 hover:bg-orange-50"
+          >
             Nach Google Docs exportieren
           </Button>
-          <Button variant="outline">
+          <Button 
+            variant="outline"
+            className="border-orange-300 hover:bg-orange-50"
+          >
             Per E-Mail teilen
           </Button>
         </div>

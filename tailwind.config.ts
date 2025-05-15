@@ -63,15 +63,28 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Real Estate theme colors updated to match besichtigungstermin.de
+				// Real Estate theme colors updated to use orange as primary
 				realestate: {
-					primary: '#9b87f5', // Main purple color
-					secondary: '#7E69AB', // Secondary purple
+					primary: '#F97316', // Bright Orange as main color
+					secondary: '#FEC6A1', // Soft Orange as secondary
 					accent: '#E53E3E', // Red accent
 					light: '#F7FAF7', // Light background
 					dark: '#333333', // Dark text
 					muted: '#718096', // Muted text
-				}
+				},
+				orange: {
+					50: '#FFF7ED',
+					100: '#FFEDD5',
+					200: '#FED7AA',
+					300: '#FDBA74',
+					400: '#FB923C',
+					500: '#F97316', // Main orange color
+					600: '#EA580C',
+					700: '#C2410C',
+					800: '#9A3412',
+					900: '#7C2D12',
+					950: '#431407',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

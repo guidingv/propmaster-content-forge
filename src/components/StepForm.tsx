@@ -90,12 +90,12 @@ const StepForm: React.FC<StepFormProps> = ({ onSubmit, isLoading }) => {
               <div 
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium mb-1
                   ${index < currentStep ? 'bg-green-500 text-white' : 
-                    index === currentStep ? 'bg-realestate-primary text-white' : 
+                    index === currentStep ? 'bg-orange-500 text-white' : 
                     'bg-gray-200 text-gray-500'}`}
               >
                 {index + 1}
               </div>
-              <span className={`text-xs hidden md:block ${index === currentStep ? 'text-realestate-primary font-medium' : 'text-gray-500'}`}>
+              <span className={`text-xs hidden md:block ${index === currentStep ? 'text-orange-500 font-medium' : 'text-gray-500'}`}>
                 {step.title}
               </span>
             </div>
@@ -103,7 +103,7 @@ const StepForm: React.FC<StepFormProps> = ({ onSubmit, isLoading }) => {
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
           <div 
-            className="bg-realestate-primary h-2 rounded-full transition-all duration-300" 
+            className="bg-orange-500 h-2 rounded-full transition-all duration-300" 
             style={{ width: `${((currentStep) / (steps.length - 1)) * 100}%` }}
           ></div>
         </div>
@@ -127,6 +127,7 @@ const StepForm: React.FC<StepFormProps> = ({ onSubmit, isLoading }) => {
             variant="outline"
             onClick={handlePrevious}
             disabled={currentStep === 0}
+            className="border-orange-300 hover:bg-orange-50"
           >
             Zurück
           </Button>
@@ -135,13 +136,14 @@ const StepForm: React.FC<StepFormProps> = ({ onSubmit, isLoading }) => {
             <Button 
               type="button"
               onClick={handleNext}
+              className="bg-orange-500 hover:bg-orange-600 text-white"
             >
               Weiter
             </Button>
           ) : (
             <Button 
               type="submit"
-              className="bg-realestate-primary hover:bg-realestate-secondary"
+              className="bg-orange-500 hover:bg-orange-600 text-white"
               disabled={isLoading}
             >
               {isLoading ? 'Generiere...' : 'Inhalte erstellen'}
