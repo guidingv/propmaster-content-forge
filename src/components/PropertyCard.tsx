@@ -23,18 +23,18 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   ];
 
   return (
-    <Card className="overflow-hidden">
-      <CardHeader className="bg-realestate-primary text-white p-4">
+    <Card className="overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+      <CardHeader className="bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] text-white p-4">
         <h3 className="text-xl font-semibold">{property.projectName}</h3>
         <p className="text-sm opacity-90">{property.units} Einheiten</p>
       </CardHeader>
-      <CardContent className="p-4 space-y-6">
+      <CardContent className="p-5 space-y-6">
         <div className="space-y-3">
-          <h4 className="font-medium text-realestate-dark">Immobiliendetails</h4>
+          <h4 className="font-medium text-gray-800">Immobiliendetails</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {infoItems.map((item, index) => (
               <div key={index} className="flex items-start space-x-3">
-                <div className="bg-realestate-light p-2 rounded-md text-realestate-primary">
+                <div className="bg-[#F7FAF7] p-2 rounded-md text-[#9b87f5]">
                   <item.icon className="h-4 w-4" />
                 </div>
                 <div>
@@ -47,11 +47,11 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
 
         <div className="space-y-3">
-          <h4 className="font-medium text-realestate-dark">Ausstattung</h4>
+          <h4 className="font-medium text-gray-800">Ausstattung</h4>
           <div className="flex flex-wrap gap-2">
             {property.amenities.length > 0 ? (
               property.amenities.map((amenity, index) => (
-                <span key={index} className="bg-realestate-light text-realestate-dark px-3 py-1 rounded-full text-xs">
+                <span key={index} className="bg-[#F7FAF7] text-gray-700 px-3 py-1 rounded-full text-xs">
                   {amenity}
                 </span>
               ))
@@ -62,11 +62,11 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
 
         <div className="space-y-3">
-          <h4 className="font-medium text-realestate-dark">Maklerinformationen</h4>
+          <h4 className="font-medium text-gray-800">Maklerinformationen</h4>
           <div className="space-y-2">
             {agentItems.map((item, index) => (
               <div key={index} className="flex items-center space-x-3">
-                <div className="text-realestate-primary">
+                <div className="text-[#9b87f5]">
                   <item.icon className="h-4 w-4" />
                 </div>
                 <div className="text-sm">

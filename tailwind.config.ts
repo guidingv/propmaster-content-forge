@@ -63,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Real Estate theme colors
+				// Real Estate theme colors updated to match besichtigungstermin.de
 				realestate: {
-					primary: '#2C5282', // Deep blue
-					secondary: '#4299e1', // Lighter blue
+					primary: '#9b87f5', // Main purple color
+					secondary: '#7E69AB', // Secondary purple
 					accent: '#E53E3E', // Red accent
-					light: '#EBF8FF', // Light blue background
-					dark: '#2D3748', // Dark text
+					light: '#F7FAF7', // Light background
+					dark: '#333333', // Dark text
 					muted: '#718096', // Muted text
 				}
 			},
