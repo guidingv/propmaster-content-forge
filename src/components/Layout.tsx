@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <nav>
             <ul className="flex space-x-6">
               <li><a href="/" className="text-realestate-dark hover:text-realestate-primary transition-colors">Startseite</a></li>
-              <li><a href="#" className="text-realestate-dark hover:text-realestate-primary transition-colors">Über uns</a></li>
+              <li><a href="#form" className="text-realestate-dark hover:text-realestate-primary transition-colors">Tool starten</a></li>
               <li><a href="#" className="text-realestate-dark hover:text-realestate-primary transition-colors">Kontakt</a></li>
             </ul>
           </nav>
@@ -37,10 +37,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Links</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-white">Startseite</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Funktionen</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Kundenstimmen</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white">Kontakt</a></li>
+                <li><a href="/" className="text-gray-300 hover:text-white">Startseite</a></li>
+                <li><a href="#form" className="text-gray-300 hover:text-white">Tool starten</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white">Datenschutz</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-white">Impressum</a></li>
               </ul>
             </div>
             <div>

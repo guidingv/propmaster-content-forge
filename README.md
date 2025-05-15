@@ -1,66 +1,6 @@
 
 # Immobilien Marketing Automation
 
-## Projekt Information
-
-**URL**: https://lovable.dev/projects/7a84b6dc-397d-40d8-b402-f96583019544
-
-## Wie kann ich diesen Code bearbeiten?
-
-Es gibt verschiedene Möglichkeiten, diese Anwendung zu bearbeiten.
-
-**Nutzen Sie Lovable**
-
-Besuchen Sie einfach das [Lovable Projekt](https://lovable.dev/projects/7a84b6dc-397d-40d8-b402-f96583019544) und beginnen Sie mit der Eingabe von Befehlen.
-
-Änderungen, die über Lovable vorgenommen werden, werden automatisch in dieses Repository übertragen.
-
-**Nutzen Sie Ihre bevorzugte IDE**
-
-Wenn Sie lokal mit Ihrer eigenen IDE arbeiten möchten, können Sie dieses Repository klonen und Änderungen pushen. Gepushte Änderungen werden auch in Lovable angezeigt.
-
-Die einzige Voraussetzung ist die Installation von Node.js & npm - [Installation mit nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Folgen Sie diesen Schritten:
-
-```sh
-# Schritt 1: Klonen Sie das Repository mit der Git-URL des Projekts.
-git clone <IHRE_GIT_URL>
-
-# Schritt 2: Navigieren Sie zum Projektverzeichnis.
-cd <IHR_PROJEKTNAME>
-
-# Schritt 3: Installieren Sie die notwendigen Abhängigkeiten.
-npm i
-
-# Schritt 4: Starten Sie den Entwicklungsserver mit automatischem Neuladen und einer sofortigen Vorschau.
-npm run dev
-```
-
-**Bearbeiten Sie eine Datei direkt in GitHub**
-
-- Navigieren Sie zu den gewünschten Datei(en).
-- Klicken Sie auf die Schaltfläche "Bearbeiten" (Stiftsymbol) oben rechts in der Dateiansicht.
-- Nehmen Sie Ihre Änderungen vor und übertragen Sie die Änderungen.
-
-**Verwenden Sie GitHub Codespaces**
-
-- Navigieren Sie zur Hauptseite Ihres Repositories.
-- Klicken Sie auf die Schaltfläche "Code" (grüne Schaltfläche) oben rechts.
-- Wählen Sie die Registerkarte "Codespaces".
-- Klicken Sie auf "New codespace", um eine neue Codespace-Umgebung zu starten.
-- Bearbeiten Sie Dateien direkt in der Codespace und übertragen und pushen Sie Ihre Änderungen, sobald Sie fertig sind.
-
-## Welche Technologien werden für dieses Projekt verwendet?
-
-Dieses Projekt wird mit folgenden Technologien erstellt:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
 ## Über das Projekt
 
 Die Immobilien Marketing Automation ist ein KI-gestütztes System, das Immobilienprofis dabei hilft, Marketingmaterialien für Immobilienangebote automatisch zu generieren. Das Tool erstellt Website-Texte, E-Mail-Kampagnen und Social-Media-Beiträge basierend auf den eingegebenen Immobiliendaten.
@@ -73,14 +13,47 @@ Die Immobilien Marketing Automation ist ein KI-gestütztes System, das Immobilie
 - Automatische Generierung von Facebook- und LinkedIn-Beiträgen
 - Responsives Design für alle Geräte
 
-## Wie kann ich dieses Projekt bereitstellen?
+## Technologien
 
-Öffnen Sie einfach [Lovable](https://lovable.dev/projects/7a84b6dc-397d-40d8-b402-f96583019544) und klicken Sie auf Teilen -> Veröffentlichen.
+Dieses Projekt verwendet:
 
-## Kann ich eine benutzerdefinierte Domain mit meinem Lovable-Projekt verbinden?
+- Vite
+- TypeScript
+- React
+- Tailwind CSS
+- shadcn-ui Komponenten
 
-Ja, das ist möglich!
+## Lokale Entwicklung
 
-Um eine Domain zu verbinden, navigieren Sie zu Projekt > Einstellungen > Domains und klicken Sie auf Domain verbinden.
+Die einzige Voraussetzung ist die Installation von Node.js & npm - [Installation mit nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Lesen Sie mehr hier: [Einrichten einer benutzerdefinierten Domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```sh
+# Schritt 1: Klonen Sie das Repository
+git clone <IHRE_GIT_URL>
+
+# Schritt 2: Navigieren Sie zum Projektverzeichnis
+cd <IHR_PROJEKTNAME>
+
+# Schritt 3: Installieren Sie die notwendigen Abhängigkeiten
+npm i
+
+# Schritt 4: Starten Sie den Entwicklungsserver
+npm run dev
+```
+
+## Bereitstellung
+
+Das Projekt kann mit verschiedenen Hosting-Diensten bereitgestellt werden:
+
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS Amplify
+
+Führen Sie den Build-Befehl aus, um die produktionsfertigen Dateien zu erstellen:
+
+```sh
+npm run build
+```
+
+Die Build-Dateien werden im `dist`-Verzeichnis gespeichert und können auf einem beliebigen Webserver gehostet werden.
