@@ -1,58 +1,59 @@
-# Welcome to your Lovable project
 
-## Project info
+# Immobilien Marketing Automation
+
+## Projekt Information
 
 **URL**: https://lovable.dev/projects/7a84b6dc-397d-40d8-b402-f96583019544
 
-## How can I edit this code?
+## Wie kann ich diesen Code bearbeiten?
 
-There are several ways of editing your application.
+Es gibt verschiedene Möglichkeiten, diese Anwendung zu bearbeiten.
 
-**Use Lovable**
+**Nutzen Sie Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7a84b6dc-397d-40d8-b402-f96583019544) and start prompting.
+Besuchen Sie einfach das [Lovable Projekt](https://lovable.dev/projects/7a84b6dc-397d-40d8-b402-f96583019544) und beginnen Sie mit der Eingabe von Befehlen.
 
-Changes made via Lovable will be committed automatically to this repo.
+Änderungen, die über Lovable vorgenommen werden, werden automatisch in dieses Repository übertragen.
 
-**Use your preferred IDE**
+**Nutzen Sie Ihre bevorzugte IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Wenn Sie lokal mit Ihrer eigenen IDE arbeiten möchten, können Sie dieses Repository klonen und Änderungen pushen. Gepushte Änderungen werden auch in Lovable angezeigt.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Die einzige Voraussetzung ist die Installation von Node.js & npm - [Installation mit nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+Folgen Sie diesen Schritten:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Schritt 1: Klonen Sie das Repository mit der Git-URL des Projekts.
+git clone <IHRE_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Schritt 2: Navigieren Sie zum Projektverzeichnis.
+cd <IHR_PROJEKTNAME>
 
-# Step 3: Install the necessary dependencies.
+# Schritt 3: Installieren Sie die notwendigen Abhängigkeiten.
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Schritt 4: Starten Sie den Entwicklungsserver mit automatischem Neuladen und einer sofortigen Vorschau.
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+**Bearbeiten Sie eine Datei direkt in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Navigieren Sie zu den gewünschten Datei(en).
+- Klicken Sie auf die Schaltfläche "Bearbeiten" (Stiftsymbol) oben rechts in der Dateiansicht.
+- Nehmen Sie Ihre Änderungen vor und übertragen Sie die Änderungen.
 
-**Use GitHub Codespaces**
+**Verwenden Sie GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Navigieren Sie zur Hauptseite Ihres Repositories.
+- Klicken Sie auf die Schaltfläche "Code" (grüne Schaltfläche) oben rechts.
+- Wählen Sie die Registerkarte "Codespaces".
+- Klicken Sie auf "New codespace", um eine neue Codespace-Umgebung zu starten.
+- Bearbeiten Sie Dateien direkt in der Codespace und übertragen und pushen Sie Ihre Änderungen, sobald Sie fertig sind.
 
-## What technologies are used for this project?
+## Welche Technologien werden für dieses Projekt verwendet?
 
-This project is built with:
+Dieses Projekt wird mit folgenden Technologien erstellt:
 
 - Vite
 - TypeScript
@@ -60,14 +61,26 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Über das Projekt
 
-Simply open [Lovable](https://lovable.dev/projects/7a84b6dc-397d-40d8-b402-f96583019544) and click on Share -> Publish.
+Die Immobilien Marketing Automation ist ein KI-gestütztes System, das Immobilienprofis dabei hilft, Marketingmaterialien für Immobilienangebote automatisch zu generieren. Das Tool erstellt Website-Texte, E-Mail-Kampagnen und Social-Media-Beiträge basierend auf den eingegebenen Immobiliendaten.
 
-## Can I connect a custom domain to my Lovable project?
+### Hauptfunktionen
 
-Yes, you can!
+- Mehrstufiges Formular zur Erfassung von Immobiliendaten
+- Generierung von SEO-optimierten Website-Inhalten
+- Erstellung von E-Mail-Marketingkampagnen
+- Automatische Generierung von Facebook- und LinkedIn-Beiträgen
+- Responsives Design für alle Geräte
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Wie kann ich dieses Projekt bereitstellen?
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Öffnen Sie einfach [Lovable](https://lovable.dev/projects/7a84b6dc-397d-40d8-b402-f96583019544) und klicken Sie auf Teilen -> Veröffentlichen.
+
+## Kann ich eine benutzerdefinierte Domain mit meinem Lovable-Projekt verbinden?
+
+Ja, das ist möglich!
+
+Um eine Domain zu verbinden, navigieren Sie zu Projekt > Einstellungen > Domains und klicken Sie auf Domain verbinden.
+
+Lesen Sie mehr hier: [Einrichten einer benutzerdefinierten Domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
