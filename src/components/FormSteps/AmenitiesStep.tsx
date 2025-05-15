@@ -15,18 +15,18 @@ const AmenitiesStep: React.FC<AmenitiesStepProps> = ({ formData, updateFormData 
   const [newAmenity, setNewAmenity] = useState('');
   
   const commonAmenities = [
-    'Swimming Pool',
-    'Fitness Center',
-    'Concierge Service',
-    'Rooftop Terrace',
-    'Private Parking',
+    'Schwimmbad',
+    'Fitnessraum',
+    'Concierge-Service',
+    'Dachterrasse',
+    'Tiefgarage',
     'Business Center',
     'Spa & Wellness',
-    'Pet-Friendly',
-    'Children\'s Playground',
-    'Tennis Court',
-    'Smart Home Technology',
-    'EV Charging Stations'
+    'Haustierfreundlich',
+    'Kinderspielplatz',
+    'Tennisplatz',
+    'Smart-Home-Technologie',
+    'E-Ladestationen'
   ];
   
   const handleAddAmenity = () => {
@@ -57,13 +57,13 @@ const AmenitiesStep: React.FC<AmenitiesStepProps> = ({ formData, updateFormData 
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h2 className="text-2xl font-bold text-realestate-dark">Property Amenities</h2>
-        <p className="text-realestate-muted">Select amenities offered by your property or add custom ones.</p>
+        <h2 className="text-2xl font-bold text-realestate-dark">Ausstattungsmerkmale</h2>
+        <p className="text-realestate-muted">Wählen Sie die Ausstattungsmerkmale Ihrer Immobilie oder fügen Sie individuelle hinzu.</p>
       </div>
 
       <div className="space-y-4">
         <div className="space-y-2">
-          <Label>Common Amenities</Label>
+          <Label>Übliche Ausstattungsmerkmale</Label>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
             {commonAmenities.map((amenity) => (
               <div key={amenity} className="flex items-center space-x-2">
@@ -86,10 +86,10 @@ const AmenitiesStep: React.FC<AmenitiesStepProps> = ({ formData, updateFormData 
         </div>
 
         <div className="space-y-2">
-          <Label>Custom Amenities</Label>
+          <Label>Individuelle Ausstattungsmerkmale</Label>
           <div className="flex space-x-2">
             <Input
-              placeholder="Add custom amenity"
+              placeholder="Ausstattungsmerkmal hinzufügen"
               value={newAmenity}
               onChange={(e) => setNewAmenity(e.target.value)}
               onKeyDown={(e) => {
@@ -104,14 +104,14 @@ const AmenitiesStep: React.FC<AmenitiesStepProps> = ({ formData, updateFormData 
               onClick={handleAddAmenity}
               variant="outline"
             >
-              Add
+              Hinzufügen
             </Button>
           </div>
         </div>
 
         {formData.amenities.length > 0 && (
           <div className="space-y-2">
-            <Label>Selected Amenities</Label>
+            <Label>Ausgewählte Ausstattungsmerkmale</Label>
             <div className="flex flex-wrap gap-2">
               {formData.amenities.map((amenity) => (
                 <div 

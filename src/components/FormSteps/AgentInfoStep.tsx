@@ -22,16 +22,16 @@ const AgentInfoStep: React.FC<AgentInfoStepProps> = ({ formData, updateFormData 
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h2 className="text-2xl font-bold text-realestate-dark">Agent Information</h2>
-        <p className="text-realestate-muted">Provide contact details for the agent responsible for this listing.</p>
+        <h2 className="text-2xl font-bold text-realestate-dark">Maklerinformationen</h2>
+        <p className="text-realestate-muted">Geben Sie Kontaktdaten für den zuständigen Makler an.</p>
       </div>
 
       <div className="space-y-4">
         <div className="space-y-2">
-          <Label htmlFor="agentName">Agent Name</Label>
+          <Label htmlFor="agentName">Name des Maklers</Label>
           <Input
             id="agentName"
-            placeholder="e.g., John Smith"
+            placeholder="z.B. Max Mustermann"
             value={formData.agent.name}
             onChange={(e) => updateAgentInfo('name', e.target.value)}
             required
@@ -39,11 +39,11 @@ const AgentInfoStep: React.FC<AgentInfoStepProps> = ({ formData, updateFormData 
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="agentEmail">Email</Label>
+          <Label htmlFor="agentEmail">E-Mail</Label>
           <Input
             id="agentEmail"
             type="email"
-            placeholder="e.g., john.smith@realestate.com"
+            placeholder="z.B. max.mustermann@immobilien.de"
             value={formData.agent.email}
             onChange={(e) => updateAgentInfo('email', e.target.value)}
             required
@@ -51,10 +51,10 @@ const AgentInfoStep: React.FC<AgentInfoStepProps> = ({ formData, updateFormData 
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="agentPhone">Phone Number</Label>
+          <Label htmlFor="agentPhone">Telefonnummer</Label>
           <Input
             id="agentPhone"
-            placeholder="e.g., (555) 123-4567"
+            placeholder="z.B. 030 12345678"
             value={formData.agent.phone}
             onChange={(e) => updateAgentInfo('phone', e.target.value)}
             required

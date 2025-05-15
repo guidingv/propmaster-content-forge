@@ -22,25 +22,24 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
   
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
-    // You would typically show a toast notification here
-    alert("Copied to clipboard!");
+    alert("In die Zwischenablage kopiert!");
   };
   
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 max-w-4xl mx-auto animate-fade-in">
       <div className="mb-8 space-y-4">
         <div className="flex justify-between items-center">
-          <h2 className="text-2xl font-bold text-realestate-dark">Generated Marketing Content</h2>
+          <h2 className="text-2xl font-bold text-realestate-dark">Generierte Marketing-Inhalte</h2>
           <Button
             variant="outline"
             size="sm"
             onClick={onReset}
           >
-            Start New Project
+            Neues Projekt starten
           </Button>
         </div>
         <p className="text-realestate-muted">
-          Your AI-generated marketing content is ready. Use the tabs below to view different content types.
+          Ihre KI-generierten Marketing-Inhalte sind bereit. Verwenden Sie die folgenden Tabs, um verschiedene Inhaltstypen anzuzeigen.
         </p>
       </div>
       
@@ -52,8 +51,8 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
       {/* Content Tabs */}
       <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
         <TabsList className="w-full grid grid-cols-2 md:grid-cols-4">
-          <TabsTrigger value="website">Website</TabsTrigger>
-          <TabsTrigger value="email">Email</TabsTrigger>
+          <TabsTrigger value="website">Webseite</TabsTrigger>
+          <TabsTrigger value="email">E-Mail</TabsTrigger>
           <TabsTrigger value="facebook">Facebook</TabsTrigger>
           <TabsTrigger value="linkedin">LinkedIn</TabsTrigger>
         </TabsList>
@@ -62,7 +61,7 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
         <TabsContent value="website" className="space-y-6">
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
             <div className="flex justify-between mb-4">
-              <h3 className="font-bold text-realestate-dark">Website Copy</h3>
+              <h3 className="font-bold text-realestate-dark">Webseiten-Text</h3>
               <Button 
                 variant="outline" 
                 size="sm"
@@ -72,7 +71,7 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
                   content.website.conclusion
                 )}
               >
-                Copy All
+                Alles kopieren
               </Button>
             </div>
             
@@ -96,13 +95,13 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
         <TabsContent value="email" className="space-y-6">
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
             <div className="flex justify-between mb-4">
-              <h3 className="font-bold text-realestate-dark">Email Campaign</h3>
+              <h3 className="font-bold text-realestate-dark">E-Mail-Kampagne</h3>
               <Button 
                 variant="outline" 
                 size="sm"
                 onClick={() => copyToClipboard(content.email)}
               >
-                Copy
+                Kopieren
               </Button>
             </div>
             
@@ -117,14 +116,14 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
             <div className="flex justify-between mb-4">
               <h3 className="font-bold text-realestate-dark">
-                Facebook Ad Copy (Variant {activeFacebookVariant + 1}/{content.facebook.length})
+                Facebook-Anzeigentext (Variante {activeFacebookVariant + 1}/{content.facebook.length})
               </h3>
               <Button 
                 variant="outline" 
                 size="sm"
                 onClick={() => copyToClipboard(content.facebook[activeFacebookVariant])}
               >
-                Copy
+                Kopieren
               </Button>
             </div>
             
@@ -154,13 +153,13 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
         <TabsContent value="linkedin" className="space-y-6">
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
             <div className="flex justify-between mb-4">
-              <h3 className="font-bold text-realestate-dark">LinkedIn Post</h3>
+              <h3 className="font-bold text-realestate-dark">LinkedIn-Beitrag</h3>
               <Button 
                 variant="outline" 
                 size="sm"
                 onClick={() => copyToClipboard(content.linkedin)}
               >
-                Copy
+                Kopieren
               </Button>
             </div>
             
@@ -173,16 +172,16 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
       
       {/* Export options */}
       <div className="mt-8 pt-6 border-t border-gray-200">
-        <h3 className="font-semibold text-realestate-dark mb-4">Export Options</h3>
+        <h3 className="font-semibold text-realestate-dark mb-4">Exportoptionen</h3>
         <div className="flex flex-wrap gap-3">
           <Button variant="outline">
-            Export as PDF
+            Als PDF exportieren
           </Button>
           <Button variant="outline">
-            Export to Google Docs
+            Nach Google Docs exportieren
           </Button>
           <Button variant="outline">
-            Share via Email
+            Per E-Mail teilen
           </Button>
         </div>
       </div>

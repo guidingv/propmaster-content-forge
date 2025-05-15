@@ -11,8 +11,8 @@ const ReviewStep: React.FC<ReviewStepProps> = ({ formData }) => {
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h2 className="text-2xl font-bold text-realestate-dark">Review Your Information</h2>
-        <p className="text-realestate-muted">Please review the details below before generating marketing content.</p>
+        <h2 className="text-2xl font-bold text-realestate-dark">Überprüfen Sie Ihre Angaben</h2>
+        <p className="text-realestate-muted">Bitte überprüfen Sie die unten stehenden Details, bevor die Marketinginhalte erstellt werden.</p>
       </div>
 
       <PropertyCard property={formData} />
@@ -21,8 +21,8 @@ const ReviewStep: React.FC<ReviewStepProps> = ({ formData }) => {
         <div className="flex">
           <div className="ml-3">
             <p className="text-sm text-blue-700">
-              When you click "Generate Content", our AI will create marketing materials including website copy, email campaigns, 
-              social media posts, and more based on the information provided.
+              Wenn Sie auf "Inhalte erstellen" klicken, wird unsere KI Marketingmaterialien erstellen, darunter Website-Texte, E-Mail-Kampagnen, 
+              Social-Media-Beiträge und mehr, basierend auf den bereitgestellten Informationen.
             </p>
           </div>
         </div>

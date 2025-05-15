@@ -10,27 +10,27 @@ interface PropertyCardProps {
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   const infoItems = [
-    { icon: Building, label: "Project Type", value: property.projectType },
-    { icon: MapPin, label: "Location", value: property.location },
-    { icon: Tag, label: "Entry Price", value: property.entryPrice },
-    { icon: Calendar, label: "Completion", value: property.completionDate }
+    { icon: Building, label: "Objektart", value: property.projectType },
+    { icon: MapPin, label: "Standort", value: property.location },
+    { icon: Tag, label: "Einstiegspreis", value: property.entryPrice },
+    { icon: Calendar, label: "Fertigstellung", value: property.completionDate }
   ];
 
   const agentItems = [
     { icon: User, label: "Name", value: property.agent.name },
-    { icon: Mail, label: "Email", value: property.agent.email },
-    { icon: Phone, label: "Phone", value: property.agent.phone }
+    { icon: Mail, label: "E-Mail", value: property.agent.email },
+    { icon: Phone, label: "Telefon", value: property.agent.phone }
   ];
 
   return (
     <Card className="overflow-hidden">
       <CardHeader className="bg-realestate-primary text-white p-4">
         <h3 className="text-xl font-semibold">{property.projectName}</h3>
-        <p className="text-sm opacity-90">{property.units} Units</p>
+        <p className="text-sm opacity-90">{property.units} Einheiten</p>
       </CardHeader>
       <CardContent className="p-4 space-y-6">
         <div className="space-y-3">
-          <h4 className="font-medium text-realestate-dark">Property Details</h4>
+          <h4 className="font-medium text-realestate-dark">Immobiliendetails</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {infoItems.map((item, index) => (
               <div key={index} className="flex items-start space-x-3">
@@ -47,7 +47,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
 
         <div className="space-y-3">
-          <h4 className="font-medium text-realestate-dark">Amenities</h4>
+          <h4 className="font-medium text-realestate-dark">Ausstattung</h4>
           <div className="flex flex-wrap gap-2">
             {property.amenities.length > 0 ? (
               property.amenities.map((amenity, index) => (
@@ -56,13 +56,13 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
                 </span>
               ))
             ) : (
-              <p className="text-sm text-gray-500 italic">No amenities selected</p>
+              <p className="text-sm text-gray-500 italic">Keine Ausstattungsmerkmale ausgewählt</p>
             )}
           </div>
         </div>
 
         <div className="space-y-3">
-          <h4 className="font-medium text-realestate-dark">Agent Information</h4>
+          <h4 className="font-medium text-realestate-dark">Maklerinformationen</h4>
           <div className="space-y-2">
             {agentItems.map((item, index) => (
               <div key={index} className="flex items-center space-x-3">

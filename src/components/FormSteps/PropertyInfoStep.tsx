@@ -12,29 +12,29 @@ interface PropertyInfoStepProps {
 
 const PropertyInfoStep: React.FC<PropertyInfoStepProps> = ({ formData, updateFormData }) => {
   const projectTypes = [
-    'Condominium',
-    'Apartment',
-    'Single-family home',
-    'Townhouse',
-    'Duplex',
-    'Luxury villa',
+    'Eigentumswohnung',
+    'Wohnung',
+    'Einfamilienhaus',
+    'Reihenhaus',
+    'Doppelhaushälfte',
+    'Luxusvilla',
     'Penthouse',
-    'Mixed-use development'
+    'Gewerbeimmobilie'
   ];
 
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h2 className="text-2xl font-bold text-realestate-dark">Tell us about your project</h2>
-        <p className="text-realestate-muted">Start by providing basic information about your real estate project.</p>
+        <h2 className="text-2xl font-bold text-realestate-dark">Erzählen Sie uns von Ihrem Projekt</h2>
+        <p className="text-realestate-muted">Beginnen Sie mit grundlegenden Informationen zu Ihrem Immobilienprojekt.</p>
       </div>
 
       <div className="space-y-4">
         <div className="space-y-2">
-          <Label htmlFor="projectName">Project Name</Label>
+          <Label htmlFor="projectName">Projektname</Label>
           <Input
             id="projectName"
-            placeholder="e.g., Skyline Residences"
+            placeholder="z.B. Skyline Residenzen"
             value={formData.projectName}
             onChange={(e) => updateFormData({ projectName: e.target.value })}
             required
@@ -42,14 +42,14 @@ const PropertyInfoStep: React.FC<PropertyInfoStepProps> = ({ formData, updateFor
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="projectType">Project Type</Label>
+          <Label htmlFor="projectType">Objektart</Label>
           <Select
             value={formData.projectType}
             onValueChange={(value) => updateFormData({ projectType: value })}
             required
           >
             <SelectTrigger id="projectType">
-              <SelectValue placeholder="Select project type" />
+              <SelectValue placeholder="Objektart auswählen" />
             </SelectTrigger>
             <SelectContent>
               {projectTypes.map((type) => (

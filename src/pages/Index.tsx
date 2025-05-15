@@ -19,14 +19,14 @@ const Index = () => {
       const content = await generateContent(data);
       setGeneratedContent(content);
       toast({
-        title: "Content Generated!",
-        description: "Your marketing content has been successfully created.",
+        title: "Inhalt erstellt!",
+        description: "Ihre Marketinginhalte wurden erfolgreich generiert.",
       });
     } catch (error) {
-      console.error("Error generating content:", error);
+      console.error("Fehler bei der Inhaltserstellung:", error);
       toast({
-        title: "Generation Failed",
-        description: "There was an error generating your content. Please try again.",
+        title: "Erstellung fehlgeschlagen",
+        description: "Es gab einen Fehler bei der Generierung Ihrer Inhalte. Bitte versuchen Sie es erneut.",
         variant: "destructive",
       });
     } finally {
@@ -46,10 +46,10 @@ const Index = () => {
           {/* Hero Section */}
           <div className="text-center space-y-4 py-8">
             <h1 className="text-4xl font-bold text-realestate-dark">
-              Real Estate Marketing <span className="text-realestate-primary">Automation</span>
+              Immobilien Marketing <span className="text-realestate-primary">Automation</span>
             </h1>
             <p className="text-xl text-realestate-muted max-w-2xl mx-auto">
-              Create professional marketing materials for your real estate listings in minutes, not hours.
+              Erstellen Sie professionelle Marketingmaterialien für Ihre Immobilienangebote in Minuten, nicht Stunden.
             </p>
           </div>
           
@@ -57,16 +57,16 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
             {[
               {
-                title: "Save Time",
-                description: "Generate weeks worth of content in just minutes with our AI-powered system."
+                title: "Zeit sparen",
+                description: "Generieren Sie Inhalte für Wochen in nur wenigen Minuten mit unserem KI-gestützten System."
               },
               {
-                title: "Professional Quality",
-                description: "Get SEO-optimized, engaging content tailored to your specific property."
+                title: "Professionelle Qualität",
+                description: "Erhalten Sie SEO-optimierte, ansprechende Inhalte, maßgeschneidert für Ihre spezifische Immobilie."
               },
               {
-                title: "Multi-Channel Ready",
-                description: "Website copy, email campaigns, and social media posts all from one form."
+                title: "Multi-Kanal-Ready",
+                description: "Website-Texte, E-Mail-Kampagnen und Social-Media-Beiträge aus einem Formular."
               }
             ].map((benefit, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">

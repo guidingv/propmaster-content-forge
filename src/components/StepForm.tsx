@@ -18,7 +18,7 @@ const StepForm: React.FC<StepFormProps> = ({ onSubmit, isLoading }) => {
   
   const [formData, setFormData] = useState<PropertyDetails>({
     projectName: '',
-    projectType: 'Condominium',
+    projectType: 'Eigentumswohnung',
     location: '',
     entryPrice: '',
     units: 0,
@@ -56,23 +56,23 @@ const StepForm: React.FC<StepFormProps> = ({ onSubmit, isLoading }) => {
   
   const steps = [
     {
-      title: 'Property Information',
+      title: 'Immobilieninformationen',
       component: <PropertyInfoStep formData={formData} updateFormData={updateFormData} />
     },
     {
-      title: 'Location & Pricing',
+      title: 'Standort & Preise',
       component: <LocationPricingStep formData={formData} updateFormData={updateFormData} />
     },
     {
-      title: 'Amenities',
+      title: 'Ausstattung',
       component: <AmenitiesStep formData={formData} updateFormData={updateFormData} />
     },
     {
-      title: 'Agent Information',
+      title: 'Maklerinformationen',
       component: <AgentInfoStep formData={formData} updateFormData={updateFormData} />
     },
     {
-      title: 'Review & Submit',
+      title: 'Überprüfen & Absenden',
       component: <ReviewStep formData={formData} />
     }
   ];
@@ -128,7 +128,7 @@ const StepForm: React.FC<StepFormProps> = ({ onSubmit, isLoading }) => {
             onClick={handlePrevious}
             disabled={currentStep === 0}
           >
-            Previous
+            Zurück
           </Button>
           
           {currentStep < steps.length - 1 ? (
@@ -136,7 +136,7 @@ const StepForm: React.FC<StepFormProps> = ({ onSubmit, isLoading }) => {
               type="button"
               onClick={handleNext}
             >
-              Next
+              Weiter
             </Button>
           ) : (
             <Button 
@@ -144,7 +144,7 @@ const StepForm: React.FC<StepFormProps> = ({ onSubmit, isLoading }) => {
               className="bg-realestate-primary hover:bg-realestate-secondary"
               disabled={isLoading}
             >
-              {isLoading ? 'Generating...' : 'Generate Content'}
+              {isLoading ? 'Generiere...' : 'Inhalte erstellen'}
             </Button>
           )}
         </div>
