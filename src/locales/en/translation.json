@@ -1,0 +1,74 @@
+{
+  "header": {
+    "subtitle": "Automated Text Generation for Real Estate Professionals"
+  },
+  "nav": {
+    "home": "Home",
+    "startTool": "Start Tool",
+    "templates": "Templates",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "imprint": "Imprint"
+  },
+  "propertyInfo": {
+    "title": "Property Information",
+    "type": "Property Type",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "area": "Area"
+  },
+  "locationPricing": {
+    "title": "Location & Pricing",
+    "address": "Address",
+    "city": "City",
+    "price": "Price"
+  },
+  "amenities": {
+    "title": "Amenities",
+    "features": "Features",
+    "parking": "Parking",
+    "pool": "Swimming Pool",
+    "garden": "Garden",
+    "airConditioning": "Air Conditioning"
+  },
+  "agentInfo": {
+    "title": "Agent Information",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email"
+  },
+  "review": {
+    "title": "Review",
+    "submit": "Submit",
+    "edit": "Edit"
+  },
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "language": {
+    "select": "Select Language",
+    "en": "English",
+    "fr": "French"
+  },
+  "form": {
+    "steps": {
+      "propertyInfo": "Property Information",
+      "locationPricing": "Location & Pricing",
+      "amenities": "Amenities",
+      "agentInfo": "Agent Information",
+      "review": "Review & Submit"
+    },
+    "generating": "Generating...",
+    "createContent": "Create Content"
+  },
+  "footer": {
+    "links": "Links",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "copyright": "A service by Besichtigungstermin.de"
+  }
+}

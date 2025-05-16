@@ -1,0 +1,74 @@
+{
+  "header": {
+    "subtitle": "Génération Automatisée de Textes pour les Professionnels de l'Immobilier"
+  },
+  "nav": {
+    "home": "Accueil",
+    "startTool": "Démarrer l'Outil",
+    "templates": "Modèles",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "imprint": "Mentions Légales"
+  },
+  "propertyInfo": {
+    "title": "Information sur la Propriété",
+    "type": "Type de Propriété",
+    "bedrooms": "Chambres",
+    "bathrooms": "Salles de Bain",
+    "area": "Superficie"
+  },
+  "locationPricing": {
+    "title": "Localisation & Prix",
+    "address": "Adresse",
+    "city": "Ville",
+    "price": "Prix"
+  },
+  "amenities": {
+    "title": "Équipements",
+    "features": "Caractéristiques",
+    "parking": "Parking",
+    "pool": "Piscine",
+    "garden": "Jardin",
+    "airConditioning": "Climatisation"
+  },
+  "agentInfo": {
+    "title": "Information sur l'Agent",
+    "name": "Nom",
+    "phone": "Téléphone",
+    "email": "Email"
+  },
+  "review": {
+    "title": "Révision",
+    "submit": "Soumettre",
+    "edit": "Modifier"
+  },
+  "common": {
+    "next": "Suivant",
+    "back": "Retour",
+    "save": "Enregistrer",
+    "cancel": "Annuler"
+  },
+  "language": {
+    "select": "Choisir la Langue",
+    "en": "Anglais",
+    "fr": "Français"
+  },
+  "form": {
+    "steps": {
+      "propertyInfo": "Informations sur la Propriété",
+      "locationPricing": "Localisation & Prix",
+      "amenities": "Équipements",
+      "agentInfo": "Informations sur l'Agent",
+      "review": "Révision & Soumission"
+    },
+    "generating": "Génération en cours...",
+    "createContent": "Créer le Contenu"
+  },
+  "footer": {
+    "links": "Liens",
+    "contact": "Contact",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "copyright": "Un service de Besichtigungstermin.de"
+  }
+}
