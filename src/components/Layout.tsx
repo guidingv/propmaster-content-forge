@@ -22,16 +22,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <p className="text-sm text-gray-500 hidden md:block">{t('header.subtitle')}</p>
             </div>
           </div>
-          <div className="flex items-center space-x-4 md:space-x-6">
-            <LanguageSelector />
+          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+            <div className="w-full md:w-auto flex justify-center">
+              <LanguageSelector />
+            </div>
             <nav className="w-full md:w-auto">
-            <ul className="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
-              <li><a href="/" className="text-gray-700 hover:text-orange-500 transition-colors text-sm md:text-base py-2 px-1">{t('nav.home')}</a></li>
-              <li><a href="#form" className="text-gray-700 hover:text-orange-500 transition-colors text-sm md:text-base py-2 px-1">{t('nav.startTool')}</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-orange-500 transition-colors text-sm md:text-base py-2 px-1">{t('nav.templates')}</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-orange-500 transition-colors text-sm md:text-base py-2 px-1">{t('nav.contact')}</a></li>
-              <li className="hidden md:block">
-                <button className="text-gray-700 hover:text-orange-500 transition-colors">
+            <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+              <li className="w-full md:w-auto text-center"><a href="/" className="block text-gray-700 hover:text-orange-500 transition-colors text-sm md:text-base py-2 px-4">{t('nav.home')}</a></li>
+              <li className="w-full md:w-auto text-center"><a href="#form" className="block text-gray-700 hover:text-orange-500 transition-colors text-sm md:text-base py-2 px-4">{t('nav.startTool')}</a></li>
+              <li className="w-full md:w-auto text-center"><a href="#" className="block text-gray-700 hover:text-orange-500 transition-colors text-sm md:text-base py-2 px-4">{t('nav.templates')}</a></li>
+              <li className="w-full md:w-auto text-center"><a href="#" className="block text-gray-700 hover:text-orange-500 transition-colors text-sm md:text-base py-2 px-4">{t('nav.contact')}</a></li>
+              <li className="hidden md:block w-auto">
+                <button className="text-gray-700 hover:text-orange-500 transition-colors px-4">
                   <Search className="h-5 w-5" />
                 </button>
               </li>
