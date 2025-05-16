@@ -15,9 +15,9 @@ export function LanguageSelector() {
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center">
       <Select defaultValue={i18n.language} onValueChange={changeLanguage}>
-        <SelectTrigger className="w-[180px]">
+        <SelectTrigger className="w-full min-w-[150px] md:w-[180px]">
           <SelectValue placeholder={t('language.select')} />
         </SelectTrigger>
         <SelectContent>

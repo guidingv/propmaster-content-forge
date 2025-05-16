@@ -6,6 +6,13 @@ node_modules
 # Testing
 coverage
 
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
 # Production
 dist
 build

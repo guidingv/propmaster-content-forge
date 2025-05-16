@@ -26,9 +26,9 @@ const ResultsView: React.FC<ResultsViewProps> = ({ property, content, onReset })
   };
   
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 max-w-4xl mx-auto animate-fade-in">
-      <div className="mb-8 space-y-4">
-        <div className="flex justify-between items-center">
+    <div className="bg-white rounded-lg shadow-lg p-4 md:p-6 max-w-4xl mx-auto animate-fade-in">
+      <div className="mb-6 md:mb-8 space-y-4">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <h2 className="text-2xl font-bold text-gray-800">Generierte Marketing-Inhalte</h2>
           <Button
             variant="outline"
