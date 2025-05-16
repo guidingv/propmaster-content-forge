@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 import { toast } from "@/components/ui/use-toast";
-import Layout from '@/components/Layout';
 import StepForm from '@/components/StepForm';
 import ResultsView from '@/components/ResultsView';
 import { PropertyDetails, GeneratedContent, generateContent } from '@/utils/mockGenerator';
@@ -40,7 +39,7 @@ const Index = () => {
   };
 
   return (
-    <Layout>
+    <>
       {!property || !generatedContent ? (
         <div className="space-y-10">
           {/* Hero Section with orange theme */}
@@ -94,7 +93,7 @@ const Index = () => {
           onReset={resetForm} 
         />
       )}
-    </Layout>
+    </>
   );
 };
 
